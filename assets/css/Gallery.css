@@ -220,9 +220,19 @@ body {
 .gallery-items .thumb img {
   width: 100%;
   height: 200px;
-  padding: 7px;
+  padding: 5px;
   background-color: #d69963;
   border-radius: 10px;
+}
+@media (max-width: 425px) {
+  .gallery-items .thumb img {
+    height: 160px;
+  }
+}
+@media (max-width: 320px) {
+  .gallery-items .thumb img {
+    height: 130px;
+  }
 }
 .line-with-logo {
   margin-top: 100px;

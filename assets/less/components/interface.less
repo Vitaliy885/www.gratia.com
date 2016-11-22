@@ -1,0 +1,50 @@
+//forms, buttons, dialogs etc.
+//responsive-menu
+.trigger-nav{
+	display: none;
+	color: #fff;
+	font-size: 45px;
+	float: right;
+	outline: none;
+	line-height: 1;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	&:hover{
+		color: @onhover;
+	}
+}
+@media(max-width: 992px){
+
+	.trigger-nav{
+		display: block;
+	}
+	.horizontal-nav{
+		padding: 50px auto;
+		position: absolute;
+		left: 0;
+		top: 100px;
+		z-index: 9999;
+		background-color: #222a3c;
+		width: 100%;
+		display: none;
+
+
+		li{
+			display: block;
+			width: 100%;
+			text-align: center;
+			border-bottom: 1px solid #3e4554;
+			margin-left: 0;
+			line-height: 2;
+
+			a{
+				display: inline-block;
+			}
+
+		}
+
+	}
+}
+@media(max-width: 425px){
+
+}

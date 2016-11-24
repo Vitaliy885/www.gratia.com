@@ -109,7 +109,9 @@
 				var myOptions = {zoom:14,center:new google.maps.LatLng(48.2970119,25.927998300000013),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
 				marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.2970119, 25.927998300000013)});
 				infowindow = new google.maps.InfoWindow({content:"<b>Gratia</b><br/>Darvin 2A<br/> Chernivtsi" });
-				google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+				google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
+				google.maps.event.addDomListener(window, 'load', init_map);
+			init_map();
 			</script>
 		</body>
 		</html>

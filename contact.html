@@ -49,7 +49,29 @@
 		</div>
 	</section>
 	
-<h1 class="pic-puc">Sometime here will be content</h1>
+	<table class="table">
+		<tr>
+			<th>Country</th>
+			<td>Ukraine</td>
+		</tr>
+		<tr>
+			<th>City</th>
+			<td>Chernivtsi</td>
+		</tr>
+		<tr>
+			<th>Address</th>
+			<td>University street, 2A</td>
+		</tr>
+		<tr>
+			<th>Email</th>
+			<td>gratia@gmail.com</td>
+		</tr>
+		<tr>
+			<th>Website</th>
+			<td>gratia.com</td>
+		</tr>
+	</table>
+	<div id="map"></div>
 
 
 
@@ -81,5 +103,18 @@
 		<script src="assets/libs/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/jquery.malihu.PageScroll2id.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+		<script>
+			function myMap() {
+				var mapOptions = {
+					center: new google.maps.LatLng(48.29510019, 25.92662662),
+					zoom: 10,
+					mapTypeId: google.maps.MapTypeId.HYBRID
+				}
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			}
+
+			myMap();
+		</script>
 	</body>
 	</html>

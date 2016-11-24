@@ -215,8 +215,14 @@ body {
   color: #8a8f9c;
   font-size: 1.7142857142857142em;
 }
-.pic-puc {
+.table {
   text-align: center;
+}
+.table th {
+  text-align: right;
+}
+#map {
+  height: 300px;
 }
 .line-with-logo {
   margin-top: 100px;

@@ -247,7 +247,7 @@ body {
 }
 @media (max-width: 425px) {
   .item .col-md-7 {
-    height: 550px;
+    height: 503px;
   }
 }
 .item .col-md-7 .block-1 {
@@ -272,6 +272,16 @@ body {
 @media (max-width: 768px) {
   .item .col-md-7 .block-3 {
     padding: 25px 40px;
+  }
+}
+@media (max-width: 425px) {
+  .item .col-md-7 .block-3 {
+    padding: 5px 40px;
+  }
+}
+@media (max-width: 320px) {
+  .item .col-md-7 .block-3 {
+    padding: 0 40px;
   }
 }
 .item .col-md-7 .block-3 h1 {

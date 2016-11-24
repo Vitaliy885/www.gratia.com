@@ -221,6 +221,9 @@ body {
 .table th {
   text-align: right;
 }
+#map {
+  height: 300px;
+}
 .line-with-logo {
   margin-top: 100px;
   text-align: center;

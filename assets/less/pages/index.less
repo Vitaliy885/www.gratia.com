@@ -1,12 +1,10 @@
 //navigation
 
 .main-nav{
-  background: @accent;
-  padding: 30px 0; 
-
-
+  background: #fff;
+  padding: 30px 0;
   .name-logo{
-    color: #fff;
+    color: #000;
     font-weight: 600;
     &:hover{
       color: @onhover;
@@ -21,24 +19,44 @@
 
   }
   ul{
-
+    margin-top: 7px;
     &:extend(.ul-unstyled);
     float: right;
+    @media(max-width:992px){
+      background-color: @onhover;
+      margin-top: 0;
+    }
+
 
 
     li{
       display: inline-block;
       padding: 0;
       line-height: 3;
-
+      @media(max-width: 991px){
+        &:first-child{
+          border-top: 1px solid #ddd;
+        }
+      }
+      transition: all 0.5s ease-in-out;
+      @media(max-width: 991px){
+        border-bottom: 1px solid #fff;      
+      }
+      &:hover{
+        background-color: #fff;
+      }
 
       a{
         padding: 10px 20px;
         font-size: 1em;
         font-weight: 600;
-        color: #fff;
+        color: #000;
         transition: all 0.5s ease-in-out;
         width: 100%;
+        @media(max-width: 991px){
+          color: #fff;
+
+        }
         &:hover{
           color: @onhover;
           text-decoration: none;
@@ -46,39 +64,95 @@
       }
       .order{
         text-decoration: none;
-        border: 1px solid #3e4554;
+        border: 1px solid #000;
         text-transform: uppercase;
         font-weight: 600;
         padding: 12px 25px;
-
-
+        @media(max-width: 992px){
+          border: none;
+        }
 
       }
     }
   }
 }
-//carousel
-.carousel {
-  background: @accent;
-  
-  img{
-    margin: 0 auto;
+//карусель
+#owl-demo {
+ position: relative;
+ z-index: ;
+ &:before{
+  position: absolute;
+  content: '';
+  background-color: #151b28;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  opacity: 0.6;
+}
+.one {
+ .bg-img('pexels-photo-63943-min.jpeg');
+ height: 400px;
+ background-size: cover;
+}
+.two {
+ .bg-img('food-dinner-lemon-rice-min.jpg');
+ height: 400px;
+ background-size: cover;
+}
+.three {
+ .bg-img('food-salad-healthy-vegetables-min.jpg');
+ height: 400px;
+ background-size: cover;
+}
+.four {
+ .bg-img('pexels-photo-62097-min.jpeg');
+ height: 400px;
+ background-size: cover;
+}
+}
+//italia foods
+
+.base-name{
+  position: absolute;
+  top: 270px;
+  color: #fff;
+  z-index: 9998;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 48px;
+  @media(max-width:2560px){
+    left: 42%;
+  }
+  @media(max-width:1440px){
+    left: 38%;
+  }
+  @media(max-width:1024px){
+    left: 33%;
+  }
+  @media(max-width: 768px){
+    left: 26%;
+  }
+  @media(max-width: 425px){
+    left: 30%;
+  }
+  @media(max-width: 414px){
+    left: 28%;
+  }
+  @media(max-width: 375px){
+    left: 28%;
+  }
+  @media(max-width: 320px){
+    left: 23%;
   }
 
-  .book{
-    color: @onhover;
-    text-decoration: none;
-    border: 1px solid #3e4554;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding: 12px 25px;
-    float: right;
-    margin-bottom: 40px;  
-  }
 }
+
+
 //section perfect
 .perfect{
-  padding: 80px 0;
+  padding: 40px 0;
   text-align: center;
   @media(max-width: 375px){
     padding-right: 10px;

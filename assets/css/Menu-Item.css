@@ -84,16 +84,16 @@ p {
 @media (max-width: 992px) {
   .trigger-nav {
     display: block;
+    color: #000;
   }
   .horizontal-nav {
     padding: 50px auto;
     position: absolute;
     left: 0;
-    top: 100px;
-    z-index: 9999;
-    background-color: #222a3c;
+    top: 114px;
     width: 100%;
     display: none;
+    z-index: 9999;
   }
   .horizontal-nav li {
     display: block;

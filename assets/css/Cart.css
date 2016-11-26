@@ -212,6 +212,39 @@ body {
   color: #8a8f9c;
   font-size: 1.7142857142857142em;
 }
+.cart {
+  text-align: center;
+}
+.cart .table td {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.cart .table td img {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+}
+.cart .table td .reject {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.cart .check {
+  background-color: #fff;
+  border: 2px solid #d69963;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #d69963;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.cart .check:hover {
+  background-color: #d69963;
+  color: #fff;
+}
 .line-with-logo {
   margin-top: 100px;
   text-align: center;

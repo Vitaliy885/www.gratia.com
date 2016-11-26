@@ -187,7 +187,6 @@ body {
 }
 #owl-demo {
   position: relative;
-  z-index: ;
 }
 #owl-demo:before {
   position: absolute;
@@ -198,7 +197,7 @@ body {
   width: 100%;
   height: 400px;
   z-index: 1;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 #owl-demo .one {
   background-image: url('../img/pexels-photo-63943-min.jpeg');
@@ -248,7 +247,7 @@ body {
 }
 @media (max-width: 1440px) {
   .base-name {
-    left: 38%;
+    left: 37%;
   }
 }
 @media (max-width: 1024px) {
@@ -263,6 +262,7 @@ body {
 }
 @media (max-width: 425px) {
   .base-name {
+    top: 245px;
     left: 30%;
   }
 }

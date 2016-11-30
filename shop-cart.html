@@ -9,10 +9,11 @@
 	<!-- Import main styles -->
 	<link rel="shortcut icon" href="assets/img/main-logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="assets/css/Cart.css">
-	<link rel="stylesheet" href="assets/libs/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="assets/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/remodal.css">
+	<link rel="stylesheet" href="assets/css/remodal-default-theme.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,7 +58,9 @@
 							<img src="assets/img/berry.png"  class="img-responsive" alt="">
 						</td>
 						<td>Pizza</td>
-						<td>1</td>
+						<td>
+							<input type="number" min="1" class="amount-order">
+						</td>
 						<td>123$</td>
 						<td>
 							<button class="reject">
@@ -71,7 +74,9 @@
 							<img src="assets/img/cheese-burger.png"  class="img-responsive" alt="">
 						</td>
 						<td>Pizza</td>
-						<td>1</td>
+						<td>
+							<input type="number" min="1" class="amount-order">
+						</td>
 						<td>123$</td>
 						<td>
 							<button class="reject">
@@ -85,7 +90,9 @@
 							<img src="assets/img/eggs.png"  class="img-responsive" alt="">
 						</td>
 						<td>Pizza</td>
-						<td>1</td>
+						<td>
+							<input type="number" min="1" class="amount-order">
+						</td>
 						<td>123$</td>
 						<td>
 							<button class="reject">
@@ -95,12 +102,27 @@
 						</td>
 					</tr>
 				</table>
-				<button class="check">Оформити замовлення</button>
+				<a href="#modal" class="check">Оформити замовлення</a>
 			</div>
 		</div>
-
 	</section>
-
+	<!-- Модальне вікно для оформлення замовлення -->
+	<!-- Модальне вікно для оформлення замовлення -->
+	<!-- Модальне вікно для оформлення замовлення -->
+	<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<div>
+			<h2 id="modal1Title">Контактна форма</h2>
+			<input type="text" name="name" placeholder="Ім'я">
+			<input type="text" name="surname" placeholder="Прізвище">
+			<input type="text" name="postname" placeholder="По батькові">
+			<input type="text" name="email" placeholder="E-mail">
+			<input type="number" min="0" name="phone" placeholder="Телефон">
+		</div>
+		<br>
+		<button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+		<button data-remodal-action="confirm" class="remodal-confirm" name="submit">OK</button>
+	</div>
 
 	<section class="line-with-logo">
 		<img src="assets/img/logotip.png" alt="" class="logotip">
@@ -121,14 +143,12 @@
 			<i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 		</footer>
 
-
-		<!-- jQuery for older IE -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!-- Site Sripts -->
 		<script src="assets/js/functions.js"></script>
-		<script src="assets/libs/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/jquery.malihu.PageScroll2id.min.js"></script>
+		<script src="assets/js/remodal.js"></script>
 
 	</body>
 	</html>

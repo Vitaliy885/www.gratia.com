@@ -107,7 +107,9 @@
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-
+    .amount-order{
+      width: 35px;
+    }
     img{
       height: 70px;
       width: 70px;
@@ -132,6 +134,22 @@
     &:hover{
       background-color: @onhover;
       color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+//Модальне вікно  для оформлення замовлення
+.remodal{
+  h2{
+    padding-top: 0;
+  }
+  input{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 7px;
+    padding: 5px 10px;
+    &:focus{
+      box-shadow: 0 0 5px #000;
     }
   }
 }

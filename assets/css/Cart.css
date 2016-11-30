@@ -220,6 +220,9 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+.cart .table td .amount-order {
+  width: 35px;
+}
 .cart .table td img {
   height: 70px;
   width: 70px;
@@ -244,6 +247,19 @@ body {
 .cart .check:hover {
   background-color: #d69963;
   color: #fff;
+  text-decoration: none;
+}
+.remodal h2 {
+  padding-top: 0;
+}
+.remodal input {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 7px;
+  padding: 5px 10px;
+}
+.remodal input:focus {
+  box-shadow: 0 0 5px #000;
 }
 .line-with-logo {
   margin-top: 100px;

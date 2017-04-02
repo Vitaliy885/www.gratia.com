@@ -1,4 +1,13 @@
 $(document).ready(function(){
+  $(window).on("load", function(){
+    setTimeout(function(){
+     $(".preloader-wrapper").fadeOut(500);
+    },2000);
+  })
+});
+
+
+$(document).ready(function(){
   $('.trigger-nav').click(function(){
     $('.trigger-victim').slideToggle(500);
   });
@@ -25,8 +34,8 @@ $(document).ready(function(){
 $(document).ready(function() {
 
   $("#owl-demo").owlCarousel({
-      
-      autoPlay: 5000,
+
+    autoPlay: 5000,
       navigation : true, // Show next and prev buttons
       slideSpeed : 500,
       paginationSpeed : 400,
@@ -42,6 +51,8 @@ $(document).ready(function() {
     });
 
 });
+
+
 
 
 

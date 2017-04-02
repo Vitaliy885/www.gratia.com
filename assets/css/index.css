@@ -545,7 +545,7 @@ body {
   background-image: url('../img/biscuit.png');
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   text-align: center;
   padding: 100px 0;

@@ -2,7 +2,7 @@ $(document).ready(function(){
   $(window).on("load", function(){
     setTimeout(function(){
      $(".preloader-wrapper").fadeOut(500);
-    },2000);
+    },1000);
   })
 });
 
